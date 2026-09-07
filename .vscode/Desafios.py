@@ -126,32 +126,32 @@
 # DESAFIO 5: Árvores e Algoritmos de Busca (BFS - Busca em Largura)
 # Explora a árvore por níveis hierárquicos (Pai/Filho) para encontrar um vértice específico.
 
-from collections import deque
+# from collections import deque
 
-arvore = {
-    'A': ['B', 'C'], 
-    'B': ['D', 'E'], 
-    'C': [],         
-    'D': [],         
-    'E': []          
-}
+# arvore = {
+#     'A': ['B', 'C'], 
+#     'B': ['D', 'E'], 
+#     'C': [],         
+#     'D': [],         
+#     'E': []          
+# }
 
-def busca_bfs(arvore_grafo, raiz, alvo):
-    fila = deque([raiz])
+# def busca_bfs(arvore_grafo, raiz, alvo):
+#     fila = deque([raiz])
     
-    print(f"--- INICIANDO BUSCA BFS PELO VÉRTICE '{alvo}' ---")
+#     print(f"--- INICIANDO BUSCA BFS PELO VÉRTICE '{alvo}' ---")
     
-    while fila:
-        vertice_atual = fila.popleft()
-        print(f"Visitando vértice: {vertice_atual}")
+#     while fila:
+#         vertice_atual = fila.popleft()
+#         print(f"Visitando vértice: {vertice_atual}")
         
-        if vertice_atual == alvo:
-            return f"Sucesso! O vértice '{alvo}' foi encontrado na árvore."
+#         if vertice_atual == alvo:
+#             return f"Sucesso! O vértice '{alvo}' foi encontrado na árvore."
         
-        for filho in arvore_grafo.get(vertice_atual, []):
-            fila.append(filho)
+#         for filho in arvore_grafo.get(vertice_atual, []):
+#             fila.append(filho)
             
-    return f"O vértice '{alvo}' não pertence a esta árvore."
+#     return f"O vértice '{alvo}' não pertence a esta árvore."
 
-resultado = busca_bfs(arvore, 'A', 'E')
-print(f"\n{resultado}")
+# resultado = busca_bfs(arvore, 'A', 'E')
+# print(f"\n{resultado}")
